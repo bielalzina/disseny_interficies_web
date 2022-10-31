@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>L'HAMBURGUESERIA</title>
+    </head>
+    <body>
+        <h2>DEMANA EL QUE ET VE DE GUST</h2>
+
+        <form
+            action="mailto:comandes@hamburgueseria.com"
+            method="post"
+            autocomplete=""
+        >
+            <p>Selecciona el nombre d'ahmburgueses que desitgis:</p>
+            <ul>
+                <li>
+                    Hamburguesa completa:
+                    <input
+                        type="number"
+                        name="completa"
+                        value="0"
+                        min="0"
+                        max="10"
+                    />
+                </li>
+                <li>
+                    Hamburguesa de pollastre:
+                    <input
+                        type="number"
+                        name="pollastre"
+                        value="0"
+                        min="0"
+                        max="10"
+                    />
+                </li>
+                <li>
+                    Hamburguesa vegetariana:
+                    <input
+                        type="number"
+                        name="vegetariana"
+                        value="0"
+                        min="0"
+                        max="10"
+                    />
+                </li>
+                <li>
+                    Hamburguesa doble:
+                    <input
+                        type="number"
+                        name="doble"
+                        value="0"
+                        min="0"
+                        max="10"
+                    />
+                </li>
+            </ul>
+            Escriu les modificacions o preferències sobre la comanda:<br />
+            <textarea
+                name="observacions"
+                cols="30"
+                rows="5"
+                placeholder="Si el cogombre no és per a tu, digues-nos-ho"
+            ></textarea>
+            <hr />
+            <h3>DADES DE CONTACTE</h3>
+            Nom: <br />
+            <input type="text" name="nom" placeholder="Nom" required />
+            <br />
+            Cognoms: <br />
+            <input type="text" name="cognoms" placeholder="Cognoms" required />
+            <br />
+            Telefon: <br />
+            <input type="tel" name="telefon" placeholder="Telefon" required />
+            <br />
+            Correu electrònic: <br />
+            <input
+                type="email"
+                name="correuE"
+                placeholder="Correu electrònic"
+                required
+            />
+            <br />
+            Ets major d'edat
+            <select name="majorEdat" required>
+                <option></option>
+                <option value="si">SI</option>
+                <option value="no">NO</option>
+            </select>
+            <hr />
+            <input type="checkbox" name="info" checked /> Vull rebre informació
+            sobre ofertes <br />
+            <input type="checkbox" name="accepta" required />Accepto les
+            condicions de l'ús del servei <br />
+            <hr />
+            <input type="reset" value="Esborrar" />
+            <input type="submit" value="Acceptar" />
+        </form>
+    </body>
+</html>
