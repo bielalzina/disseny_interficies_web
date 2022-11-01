@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AGROTURISME EL SIURELL</title>
+    </head>
+    <body>
+        <h1>AGROTURISME EL SIURELL</h1>
+        <h2>RESERVA UNA ESTADA INOLVIDABLE</h2>
+
+        <form action="mailto:info@elsiurell.net" method="post" autocomplete="">
+            <p>Selecciona el tipus d'habitació que desitgis:</p>
+            <ul>
+                <li>
+                    Habitació INDIVIDUAL:
+                    <input
+                        type="number"
+                        name="individual"
+                        value="0"
+                        min="0"
+                        max="5"
+                    />
+                </li>
+                <li>
+                    Habitació DOBLE:
+                    <input
+                        type="number"
+                        name="doble"
+                        value="0"
+                        min="0"
+                        max="5"
+                    />
+                </li>
+                <li>
+                    Habitació TWIN:
+                    <input
+                        type="number"
+                        name="twin"
+                        value="0"
+                        min="0"
+                        max="5"
+                    />
+                </li>
+                <li>
+                    Habitació SUITE:
+                    <input
+                        type="number"
+                        name="suite"
+                        value="0"
+                        min="0"
+                        max="5"
+                    />
+                </li>
+            </ul>
+            <hr />
+            <h3>DADES DE CONTACTE</h3>
+            NOM: <br />
+            <input type="text" name="nom" placeholder="Nom" required />
+            <br />
+            COGNOMS: <br />
+            <input type="text" name="cognoms" placeholder="Cognoms" required />
+            <br />
+            TELÈFON: <br />
+            <input type="tel" name="telefon" placeholder="Telefon" required />
+            <br />
+            CORREU ELECTRÒNIC: <br />
+            <input
+                type="email"
+                name="email"
+                placeholder="Correu electrònic"
+                required
+            />
+            <br />
+            <br />
+            Ets major d'edat
+            <select name="majorEdat" required>
+                <option></option>
+                <option value="si">SI</option>
+                <option value="no">NO</option>
+            </select>
+            <hr />
+            <input type="checkbox" name="info" checked /> Vull rebre informació
+            comercial per correu electrònic<br />
+            <input type="checkbox" name="accepta" required />Accepto les
+            condicions de l'ús del servei <br />
+            <hr />
+            <input type="reset" value="Esborrar" />
+            <input type="submit" value="Acceptar" />
+        </form>
+    </body>
+</html>
