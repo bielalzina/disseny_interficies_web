@@ -1,0 +1,100 @@
+body {
+    font-family: Ubuntu, Helvetica, Arial, sans-serif;
+    background-color: #d8bd9f;
+}
+
+.centrat {
+    margin: auto;
+    width: 50%;
+    padding: 5px;
+    box-shadow: 5px 5px black;
+    background-color: #ebe6ea;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: x-large;
+    color: #1b004b;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 90%;
+    overflow: hidden;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 20px;
+    font-size: x-large;
+}
+
+th {
+    background-color: #ebe6ea;
+    color: #1b004b;
+}
+
+td {
+    height: 100px;
+}
+
+td:hover {
+    background-color: #ff5830;
+    color: whitesmoke;
+    font-weight: bold;
+    transform: translate3d(10px, -10px, 0px);
+    transition: all 0.5s;
+}
+
+.sessio {
+    width: 140px;
+    height: 90px;
+}
+.esplai {
+    height: 30px;
+}
+
+.taula_horari {
+    overflow-x: auto;
+}
+
+.cac {
+    background-color: #6aa3b4;
+}
+
+.rrhh {
+    background-color: #ef8591;
+}
+
+.gdje {
+    background-color: #aed0a7;
+}
+
+.piac {
+    background-color: #fef6cd;
+}
+
+.ang {
+    background-color: #fdcae1;
+}
+
+.ofi {
+    background-color: #9297de;
+}
+
+.tut {
+    background-color: #ebac91;
+}
+
+.fol {
+    background-color: #e7a44a;
+}
+
+.ofiang {
+    background-color: #7b8f89;
+}
+
+.buida {
+    color: #d8bd9f;
+}

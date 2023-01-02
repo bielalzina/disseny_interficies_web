@@ -1,0 +1,55 @@
+body {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 10px;
+    margin: 5px;
+}
+
+th {
+    background-color: #3864a5;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+tr:nth-child(even) {
+    background-color: #d4f3f8;
+}
+
+tr:hover {
+    background-color: #a7ecf7;
+    font-weight: bold;
+}
+
+td {
+    border-right: 1px solid;
+}
+
+.container {
+    overflow-x: auto;
+    margin: 50px;
+}
+h1 {
+    margin-left: 50px;
+}
+
+.centrat {
+    text-align: center;
+}
+
+.dreta {
+    text-align: right;
+}
+
+.esquerra {
+    text-align: left;
+}
