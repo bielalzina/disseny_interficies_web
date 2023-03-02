@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RACE BIKE</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            sizes="128x128"
+            href="img/favicon.ico"
+        />
+    </head>
+    <body>
+        <h1>JeSuisSports</h1>
+        <!-- This is an HTML page that uses the <picture > element to
+             choose between several image files based on the viewport width -->
+        <picture>
+            <!-- If viewport width is greater than 768px, use 1024px width image,
+                 using 80% of the viewport width -->
+            <source
+                media="(min-width: 768px)"
+                srcset="img/PUBLIC_DOMAIN_1024x.jpg"
+                style="width: 80%"
+            />
+
+            <!-- If viewport width is greater than 460px, use 768px width image,
+                 using 100% of the viewport width -->
+            <source
+                media="(min-width: 460px)"
+                srcset="img/PUBLIC_DOMAIN_768x.jpg"
+                style="width: 100%"
+            />
+
+            <!-- Otherwise, use 460px width image,
+                 using 50% of the viewport width -->
+            <img
+                src="img/PUBLIC_DOMAIN_460x.jpg"
+                style="width: 50%"
+                alt="RACE BIKE"
+            />
+        </picture>
+    </body>
+</html>
