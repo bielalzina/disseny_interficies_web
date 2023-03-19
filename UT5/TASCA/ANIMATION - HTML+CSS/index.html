@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .missatge {
+                margin: 50px;
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                align-items: center;
+                background-color: #bbd6ba;
+                color: #000000;
+                font-weight: bold;
+                justify-content: space-around;
+                font-family: monospace;
+                width: 1120px;
+                height: 240px;
+                animation: canviafons 4s linear 16s 1 forwards;
+            }
+
+            .flex-items {
+                width: 180px;
+                height: 180px;
+                font-size: 154px;
+                background-color: #bbd6ba;
+            }
+
+            .c1 {
+                background-color: #bbd6ba;
+                color: #bbd6ba;
+                animation: mostracaracter 2s ease-in-out 2s 7 forwards;
+            }
+
+            .c2 {
+                background-color: #bbd6ba;
+                color: #bbd6ba;
+                animation: mostracaracter 2s ease-in-out 4s 6 forwards;
+            }
+
+            .c3 {
+                background-color: #bbd6ba;
+                color: #bbd6ba;
+                animation: mostracaracter 2s ease-in-out 6s 5 forwards;
+            }
+
+            .c4 {
+                background-color: #bbd6ba;
+                color: #bbd6ba;
+                animation: mostracaracter 2s ease-in-out 8s 4 forwards;
+            }
+
+            .c5 {
+                background-color: #bbd6ba;
+                color: #bbd6ba;
+                animation: mostracaracter 2s ease-in-out 10s 3 forwards;
+            }
+
+            @keyframes mostracaracter {
+                from {
+                    background-color: #bbd6ba;
+                    color: #bbd6ba;
+                }
+                to {
+                    background-color: #99c0df;
+                    color: #000000;
+                }
+            }
+
+            @keyframes canviafons {
+                from {
+                    background-color: #bbd6ba;
+                }
+                to {
+                    background-color: #99c0df;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="missatge">
+            <div class="flex-items c1">M</div>
+            <div class="flex-items c2">E</div>
+            <div class="flex-items c3">T</div>
+            <div class="flex-items c4">E</div>
+            <div class="flex-items c5">O</div>
+        </div>
+    </body>
+</html>
