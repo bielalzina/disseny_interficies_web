@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/script.js"></script>
+        <link rel="stylesheet" href="./css/estils.css" />
+        <link rel="shortcut icon" href="./imatges/favicon.png" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Montserrat"
+            rel="stylesheet"
+        />
+        <title>INTEGRACIÓ CONTINGUT INTERACTIU</title>
+    </head>
+    <body>
+        <!-- CAPÇALERA -->
+
+        <header>
+            <div class="flex-container01">
+                <div class="flex-item-esquerra">
+                    <div id="avatar"></div>
+                </div>
+                <div class="flex-item-dreta">
+                    <nav>
+                        <div id="nav-right">
+                            <a id="anar_inici">INICI</a>
+                            <a id="anar_esdeveniments">ESDEVENIMENTS</a>
+                            <a id="anar_efectes">EFECTES</a>
+                            <a id="anar_jquery_html">JQUERY HTML</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- CONTINGUT -->
+        <div id="main">
+            <h1 id="inici">INTEGRACIÓ DE CONTINGUT INTERCATIU</h1>
+
+            <!-- MÈTODES D'ESDEVENIMENTS EN JQUERY -->
+
+            <section>
+                <h2 id="esdeveniments">MÈTODES D'ESDEVENIMENTS EN JQUERY</h2>
+
+                <!-- ON() i OFF() -->
+
+                <article>
+                    <span class="info_interactiva" title="on_off"
+                        >on() i off()</span
+                    >
+                    <br />
+                    <br />
+                    <div class="informacio" id="info_interactiva_on_off">
+                        <p class="paragraf">
+                            El mètode on() assigna un o més esdeveniments als
+                            elements seleccionats i elements secundaris
+                        </p>
+                        <p class="paragraf">
+                            El mètode off(), normalment s'utilitza per eliminar
+                            els esdeveniments assignats amb el mètode on().
+                        </p>
+
+                        <p class="instruccions">
+                            Per visualitzar el seu funcionament, clica en els
+                            botons on() i off()
+                        </p>
+                    </div>
+
+                    <button id="on_btn">on()</button>
+                    <button id="off_btn">off()</button>
+                    <div class="div_no_visible" id="info_on">
+                        <p>Has clicat en on()!!</p>
+                        <p>Torna a clicar-hi, quan te cansis, clica en off()</p>
+                    </div>
+                    <div class="div_no_visible" id="info_off">
+                        <p>Has clicat en off()!!</p>
+                        <p>
+                            El boto on() ja no te cap esdeveniment associat,
+                            comprova-ho
+                        </p>
+                    </div>
+                </article>
+                <hr />
+
+                <!-- ONE() -->
+
+                <article>
+                    <br />
+                    <span class="info_interactiva" title="one">one()</span>
+                    <br />
+                    <br />
+
+                    <div class="informacio" id="info_interactiva_one">
+                        <p class="paragraf">
+                            El mètode one() assigna un o més esdeveniments als
+                            elements seleccionats
+                        </p>
+                        <p class="paragraf">
+                            Quan s'utilitza el mètode one(), lesdeveniment només
+                            s'executa UNA VEGADA per a cada element.
+                        </p>
+                        <p class="instruccions">
+                            Per comprovar el seu funcionament, clica en el boto
+                            one() i apareix l'alert associat. Si tornes clicar
+                            en el boto, l'alert no apareix, ja que amb el mètode
+                            one(), l'esdeveniment associat només s'executa UN
+                            COP per a cada element.
+                        </p>
+                    </div>
+                    <button id="boto_one">one()</button>
+                </article>
+                <hr />
+
+                <!-- CLICK() i DBLCLICK() -->
+
+                <article>
+                    <br />
+                    <span class="info_interactiva" title="click_dblclick"
+                        >click() i dblclick()</span
+                    >
+                    <br />
+                    <br />
+
+                    <div
+                        class="informacio"
+                        id="info_interactiva_click_dblclick"
+                    >
+                        <p class="paragraf">
+                            El mètode click() activa l'esdeveniment de clic o
+                            enllaça una funció per executar-se quan es produeix
+                            un esdeveniment de clic
+                        </p>
+                        <p class="paragraf">
+                            El mètode dblclick() activa l'esdeveniment dblclick
+                            o enllaça una funció per executar-se quan es
+                            produeix un esdeveniment dblclick
+                        </p>
+                        <p class="instruccions">
+                            Per comprovar el seu funcionament, clica en el boto
+                            click() per accedir al password i clica dos cops en
+                            el boto dblclick per amagar-lo
+                        </p>
+                    </div>
+                    <button id="click_mostrar_btn">
+                        click() per veure password
+                    </button>
+                    <button id="dblclick_ocultar_btn">
+                        dblclick() per ocultar password
+                    </button>
+                    <div class="div_no_visible" id="password">
+                        PASSWORD: 7*ZU6G4hGPDwdiqWT^IIl^F3
+                    </div>
+                </article>
+                <hr />
+
+                <!-- MOUSEENTER() i MOUSELEAVE() -->
+
+                <article>
+                    <br />
+                    <span class="info_interactiva" title="mouseenter_mouseleave"
+                        >mouseenter() i mouseleave()</span
+                    >
+                    <br />
+                    <br />
+                    <div
+                        class="informacio"
+                        id="info_interactiva_mouseenter_mouseleave"
+                    >
+                        <p class="paragraf">
+                            L'esdeveniment mouseenter es produeix quan el punter
+                            del ratolí està sobre (entra) l'element seleccionat.
+                            El mètode mouseenter() activa l'esdeveniment
+                            mouseenter o enllaça una funció per executar-se quan
+                            es produeix un esdeveniment mouseenter
+                        </p>
+                        <p class="paragraf">
+                            L'esdeveniment mouseleave es produeix quan el punter
+                            del ratolí abandona l'element seleccionat. El mètode
+                            mouseleave() activa l'esdeveniment mouseleave o
+                            enllaça una funció per executar-se quan es produeix
+                            un esdeveniment mouseleave
+                        </p>
+                        <p class="instruccions">
+                            Per comprovar el seu funcionament, situa el punter
+                            sobre l'element i podras comprovar com aquest
+                            canvia. Quan retires el punter de l'element, aquest
+                            retorna a l'estat inicial
+                        </p>
+                    </div>
+                    <div class="div_visible" id="mouse_enter_leave">
+                        Mou el punter del ratolí sobre aquesta caixa
+                    </div>
+                </article>
+                <hr />
+
+                <!-- KEYPRESS() -->
+
+                <article>
+                    <br />
+                    <span class="info_interactiva" title="keypress"
+                        >keypress()</span
+                    >
+                    <br />
+                    <br />
+                    <div class="informacio" id="info_interactiva_keypress">
+                        <p class="paragraf">
+                            El mètode keypress() activa l'esdeveniment de pitjar
+                            una tecla o enllaça una funció per executar-se quan
+                            es produeix un esdeveniment de pitjar una tecla
+                        </p>
+
+                        <p class="instruccions">
+                            Per comprovar el seu funcionament, situa el cursor
+                            en l'input i pitja les tecles que vulguis. En
+                            l'element posterior apareix el codi ASCI correponent
+                            a la darrera tecla pitjada
+                        </p>
+                    </div>
+                    <p class="instruccions">
+                        Introdueix un o més caràcters:&nbsp;
+                        <input type="text" id="cadena01" />
+                    </p>
+                    <div class="div_visible" id="codi_caracter">
+                        Codi ASCI del darrer caràcter teclejat:
+                    </div>
+                </article>
+                <hr />
+
+                <!-- KEYDOWN() i KEYUP() -->
+
+                <article>
+                    <br />
+                    <span class="info_interactiva" title="keydown_keyup"
+                        >keydown() i keyup()</span
+                    >
+                    <br />
+                    <br />
+                    <div class="informacio" id="info_interactiva_keydown_keyup">
+                        <p class="paragraf">
+                            L'esdeveniment keydown es produeix quan es prem una
+                            tecla del teclat. El mètode keydown() activa
+                            l'esdeveniment keydown, o enllaça una funció per
+                            executar-se quan es produeix un esdeveniment
+                            keydown.
+                        </p>
+                        <p class="paragraf">
+                            L'esdeveniment keyup es produeix quan es deixa anar
+                            una tecla del teclat. El mètode keyup() activa
+                            l'esdeveniment keyup o enllaça una funció per
+                            executar-se quan es produeix un esdeveniment keyup.
+                        </p>
+                        <p class="instruccions">
+                            Per comprovar el seu funcionament, situa el cursor
+                            en l'input i pitja les tecles que vulguis. Els
+                            elements posteriors canvien quan prems i quan deixar
+                            anar la tecla
+                        </p>
+                    </div>
+                    <p class="instruccions">
+                        Introdueix un o més caràcters:&nbsp;
+                        <input type="text" id="cadena02" />
+                    </p>
+                    <div class="flex-container02">
+                        <div class="fletxes_down_up" id="key_down">&#8595;</div>
+                        <div class="fletxes_down_up" id="key_up">&#8593;</div>
+                    </div>
+                </article>
+                <hr />
+
+                <!-- FOCUS() -->
+
+                <article>
+                    <br />
+                    <span class="info_interactiva" title="focus">focus()</span>
+                    <br />
+                    <br />
+                    <div class="informacio" id="info_interactiva_focus">
+                        <p class="paragraf">
+                            L'esdeveniment de focus es produeix quan un element
+                            s'enfoca (quan se selecciona amb un clic del ratolí
+                            o "navegant amb la pestanya" cap a ell). El mètode
+                            focus() activa l'esdeveniment focus o enllaça una
+                            funció per executar-se quan es produeix un
+                            esdeveniment focus
+                        </p>
+
+                        <p class="instruccions">
+                            Per comprovar el seu funcionament, situa el cursor
+                            en l'input
+                        </p>
+                    </div>
+
+                    <p class="instruccions">
+                        Clica amb el punter del ratoli dins l'input si vols que
+                        tengui el focus:&nbsp;
+                        <input type="text" id="cadena03" placeholder="input" />
+                    </p>
+                    <div class="div_no_visible" id="focus">
+                        L'input ara té el focus
+                    </div>
+                </article>
+                <hr />
+
+                <!-- FOCUSIN() I FOCUSOUT() -->
+
+                <article>
+                    <br />
+                    <span class="info_interactiva" title="focusin_focusout"
+                        >focusin() i focusout()</span
+                    >
+                    <br />
+                    <br />
+                    <div
+                        class="informacio"
+                        id="info_interactiva_focusin_focusout"
+                    >
+                        <p class="paragraf">
+                            L'esdeveniment focusin es produeix quan un element
+                            (o qualsevol element que hi ha dins) s'enfoca. El
+                            mètode focusin() enllaça una funció per executar-se
+                            quan es produeix un esdeveniment de focus a
+                            l'element o qualsevol element que hi hagi dins.
+                        </p>
+                        <p class="paragraf">
+                            L'esdeveniment focusout es produeix quan un element
+                            (o qualsevol element que hi hagi) perd el focus. El
+                            mètode focusout() enllaça una funció per executar-se
+                            quan es produeix un esdeveniment de focus a
+                            l'element o qualsevol element que hi hagi dins.
+                        </p>
+                        <p class="instruccions">
+                            Per comprovar el seu funcionament, situa el cursor
+                            en l'input i després situa'l fora de l'input
+                        </p>
+                    </div>
+                    <p class="instruccions">
+                        Clica amb el punter del ratoli dins l'input si vols que
+                        tengui el focus:&nbsp;
+                        <input type="text" id="cadena04" placeholder="input" />
+                    </p>
+                    <p class="instruccions">
+                        Clica amb el punter del ratoli fora de l'input si vols
+                        que deixi de tenir el focus:
+                    </p>
+
+                    <div class="div_no_visible" id="focusin">
+                        L'input HA GUANYAT el focus
+                    </div>
+                    <div class="div_no_visible" id="focusout">
+                        L'input HA PERDUT perdut el focus
+                    </div>
+                </article>
+                <hr />
+
+                <!-- RESIZE() -->
+
+                <article>
+                    <br />
+                    <span class="info_interactiva" title="resize"
+                        >resize()</span
+                    >
+                    <br />
+                    <br />
+                    <div class="informacio" id="info_interactiva_resize">
+                        <p class="paragraf">
+                            L'esdeveniment de canvi de mida es produeix quan la
+                            finestra del navegador canvia de mida. El mètode
+                            resize() activa l'esdeveniment de canvi de mida o
+                            enllaça una funció per executar-se quan es produeix
+                            un esdeveniment de canvi de mida.
+                        </p>
+
+                        <p class="instruccions">
+                            Per comprovar el seu funcionament, augmenta o
+                            disminueix el tamany de la finestra del teu
+                            navegador
+                        </p>
+                    </div>
+
+                    <div class="div_visible" id="size"></div>
+                </article>
+                <hr />
+
+                <!-- SCROLL() -->
+
+                <article>
+                    <br />
+                    <span class="info_interactiva" title="scroll"
+                        >scroll()</span
+                    >
+                    <br />
+                    <br />
+                    <div class="informacio" id="info_interactiva_scroll">
+                        <p class="paragraf">
+                            L'esdeveniment de desplaçament es produeix quan
+                            l'usuari es desplaça a l'element especificat.
+                            L'esdeveniment de desplaçament funciona per a tots
+                            els elements que es poden desplaçar i l'objecte
+                            finestra (finestra del navegador)
+                        </p>
+
+                        <p class="instruccions">
+                            Per comprovar el seu funcionament quan ens desplaçem
+                            per la pàgina del navegadoraugmenta, fes servir la
+                            barra de desplaçament vertical o la roda del ratolí
+                        </p>
+                    </div>
+
+                    <div class="div_no_visible" id="scroll">
+                        Està fent SCROLL!!!
+                    </div>
+                    <p></p>
+                </article>
+                <hr />
+            </section>
+
+            <!-- EFECTES EN JQUERY -->
+
+            <section>
+                <h2 id="efectes">EFECTES EN JQUERY</h2>
+
+                <!-- FADEOUT() i FADEIN() -->
+
+                <article>
+                    <br />
+                    <span class="info_interactiva" title="fadeOut_fadeIn"
+                        >fadeOut() i fadeIn()</span
+                    >
+                    <br />
+                    <br />
+                    <div
+                        class="informacio"
+                        id="info_interactiva_fadeOut_fadeIn"
+                    >
+                        <p class="paragraf">
+                            El mètode fadeOut() canvia gradualment l'opacitat,
+                            per als elements seleccionats, de visible a ocult.
+                        </p>
+                        <p class="paragraf">
+                            El mètode fadeIn() canvia gradualment l'opacitat,
+                            per als elements seleccionats, d'ocult a visible.
+                        </p>
+                        <p class="instruccions">
+                            Per visualitzar el seu funcionament, clica primer en
+                            el boto fadeOut() i després en el boto fadeIn() i
+                            així successivament
+                        </p>
+                    </div>
+
+                    <button id="fade_out_btn">fadeOut()</button>
+                    <button id="fade_in_btn">fadeIn()</button>
+                    <div class="div_visible" id="fade_in_out">
+                        FADE OUT <> FADE IN
+                    </div>
+                </article>
+                <hr />
+
+                <!-- FADETOGGLE() -->
+
+                <article>
+                    <br />
+                    <span class="info_interactiva" title="fadeToggle"
+                        >fadeToggle()</span
+                    >
+                    <br />
+                    <br />
+                    <div class="informacio" id="info_interactiva_fadeToggle">
+                        <p class="paragraf">
+                            El mètode fadeToggle() alterna entre els mètodes
+                            fadeIn() i fadeOut()
+                        </p>
+
+                        <p class="instruccions">
+                            Per visualitzar el seu funcionament, clica
+                            successivament en el boto fadeToggle()
+                        </p>
+                    </div>
+
+                    <button id="fade_toggle_btn">fadeToggle()</button>
+                    <div class="div_visible" id="fade_toggle">FADE TOGGLE</div>
+                </article>
+                <hr />
+
+                <!-- FADETO() -->
+
+                <article>
+                    <br />
+                    <span class="info_interactiva" title="fadeTo"
+                        >fadeTo()</span
+                    >
+                    <br />
+                    <br />
+                    <div class="informacio" id="info_interactiva_fadeTo">
+                        <p class="paragraf">
+                            El mètode fadeTo() canvia gradualment l'opacitat,
+                            per als elements seleccionats, a una opacitat
+                            especificada
+                        </p>
+
+                        <p class="instruccions">
+                            Per visualitzar aquest canvi gradual d'opacitat,
+                            clica en el boto fadeTo(). En aquest cas s'ha
+                            configurat el canvi en 1000ms, de forma lineal per
+                            arribar a un 50% d'opacitat
+                        </p>
+                    </div>
+
+                    <button id="fade_to_btn">fadeTo()</button>
+                    <div class="div_visible" id="fade_to">FADE TO</div>
+                </article>
+                <hr />
+
+                <!-- SLIDEUP() i SLIDEDOWN() -->
+
+                <article>
+                    <br />
+                    <span class="info_interactiva" title="slideUp_slideDown"
+                        >slideUp() i slideDown()</span
+                    >
+                    <br />
+                    <br />
+                    <div
+                        class="informacio"
+                        id="info_interactiva_slideUp_slideDown"
+                    >
+                        <p class="paragraf">
+                            El mètode slideUp() amaga els elements seleccionats.
+                            Aquest efecte es pot equiparar a l'acció d'obrir una
+                            persiana enrotllable
+                        </p>
+                        <p class="paragraf">
+                            El mètode slideDown() mostra els elements
+                            seleccionats. Aquest efecte es pot equiparar a
+                            l'acció de tancar una persiana enrotllable
+                        </p>
+                        <p class="instruccions">
+                            Per visualitzar el seu funcionament, clica primer en
+                            el boto slideUp() i després en el boto slideDown i
+                            així successivament
+                        </p>
+                    </div>
+
+                    <button id="slide_up_btn">slideUp()</button>
+                    <button id="slide_down_btn">slideDown()</button>
+                    <div class="div_visible" id="slide_up_down">
+                        SLIDE UP <> SLIDE DOWN
+                    </div>
+                </article>
+                <hr />
+
+                <!-- SLIDETOGGLE -->
+
+                <article>
+                    <br />
+                    <span class="info_interactiva" title="slideToggle"
+                        >slideToggle()</span
+                    >
+                    <br />
+                    <br />
+                    <div class="informacio" id="info_interactiva_slideToggle">
+                        <p class="paragraf">
+                            El mètode slideToggle() alterna entre els mètodes
+                            slideIn() i slideDown()
+                        </p>
+
+                        <p class="instruccions">
+                            Per visualitzar el seu funcionament, clica
+                            successivament en el boto slideToggle()
+                        </p>
+                    </div>
+
+                    <button id="slide_toggle_btn">slideToggle()</button>
+                    <div class="div_visible" id="slide_toggle">
+                        SLIDE TOGGLE
+                    </div>
+                </article>
+                <hr />
+
+                <!-- ANIMATE() -->
+
+                <article>
+                    <br />
+                    <span class="info_interactiva" title="animate"
+                        >animate()</span
+                    >
+                    <br />
+                    <br />
+                    <div class="informacio" id="info_interactiva_animate">
+                        <p class="paragraf">
+                            El mètode animate() realitza una animació
+                            personalitzada d'un conjunt de propietats CSS.
+                        </p>
+                        <p class="paragraf">
+                            Aquest mètode canvia un element d'un estat a un
+                            altre amb estils CSS. El valor de la propietat CSS
+                            es canvia gradualment per crear un efecte animat.
+                        </p>
+                        <p class="paragraf">
+                            Podem configurar l'animació mitjançant valors
+                            relatius, valors absoluts o amb funcionalitat de
+                            cua.
+                        </p>
+
+                        <p class="instruccions">
+                            Per visualitzar el seu funcionament, clica en els
+                            botons animate(valors relatius), animate(valors
+                            predefinits) i animate(funcionalitat de cua)
+                        </p>
+                    </div>
+
+                    <button id="animate_relatius_btn">
+                        animate(valors relatius)
+                    </button>
+                    <div class="div_visible" id="animate_relatius">
+                        CLICA SUCCESSIVAMENT EN EL BOTÓ
+                    </div>
+                    <br />
+                    <button id="animate_predefinits_btn">
+                        animate(valors predefinits)
+                    </button>
+                    <div class="div_visible" id="animate_predefinits">
+                        CLICA SUCCESSIVAMENT EN EL BOTÓ
+                    </div>
+                    <br />
+                    <button id="animate_cua_btn">
+                        animate(funcionalitat de cua)
+                    </button>
+                    <div class="div_visible" id="animate_cua">
+                        CLICA EN EL BOTÓ
+                    </div>
+                </article>
+                <hr />
+
+                <!-- STOP() -->
+
+                <article>
+                    <br />
+                    <span class="info_interactiva" title="stop">stop()</span>
+                    <br />
+                    <br />
+                    <div class="informacio" id="info_interactiva_stop">
+                        <p class="paragraf">
+                            El mètode jQuery stop() s'utilitza per aturar una
+                            animació o efecte abans que acabi
+                        </p>
+
+                        <p class="instruccions">
+                            Per visualitzar el seu funcionament, clica en el
+                            boto COMENÇA per iniciar l'animació, despres clica
+                            en el boto stop() per aturar-la (l'animació dura 10
+                            segons)
+                        </p>
+                    </div>
+                    <button id="inicia_btn">COMENÇA</button>
+
+                    <button id="stop_btn">stop()</button>
+                    <div class="div_visible" id="stop">&nbsp;</div>
+                </article>
+                <hr />
+
+                <!-- HIDE() i SHOW() -->
+
+                <article>
+                    <br />
+                    <span class="info_interactiva" title="hide_show"
+                        >hide() i show()</span
+                    >
+                    <br />
+                    <br />
+                    <div class="informacio" id="info_interactiva_hide_show">
+                        <p class="paragraf">
+                            El mètode hide() amaga els elements seleccionats
+                        </p>
+                        <p class="paragraf">
+                            El mètode show() mostra els elements ocults
+                            seleccionats
+                        </p>
+
+                        <p class="instruccions">
+                            Per visualitzar el seu funcionament, clica en el
+                            boto hide() per amagar l'element i despres clica en
+                            el boto show() per mostrar-lo
+                        </p>
+                    </div>
+                    <button id="hide_btn">hide()</button>
+
+                    <button id="show_btn">show()</button>
+                    <div class="div_visible" id="hide_show">&nbsp;</div>
+                </article>
+                <hr />
+
+                <!-- CALLBACK -->
+
+                <article>
+                    <br />
+                    <span class="info_interactiva" title="callback"
+                        >callback</span
+                    >
+                    <br />
+                    <br />
+                    <div class="informacio" id="info_interactiva_callback">
+                        <p class="paragraf">
+                            Les sentències de JavaScript s'executen línia per
+                            línia, de tal forma que durant l'execució d'un
+                            efecte, es possible passar a la següent linia de
+                            codi abans que l'efecte no hagi acabat, la qual cosa
+                            pot provocar errors.
+                        </p>
+                        <p class="paragraf">
+                            Per evitar-ho, s'ha crear una funció callback.
+                            Aquesta funció s'executa un cop finalitzat l'efecte
+                            actual.
+                        </p>
+
+                        <p class="instruccions">
+                            Per visualitzar el seu funcionament, clica en el
+                            boto ACTIVA OPACITAT i despres clica en el boto
+                            DESACTIVA OPACITA
+                        </p>
+                    </div>
+                    <button id="opacitat_on_callback_btn">
+                        ACTIVA OPACITAT
+                    </button>
+                    <button id="opacitat_off_callback_btn">
+                        DESACTIVA OPACITAT
+                    </button>
+                    <div class="div_visible" id="callback">ELEMENT</div>
+                    <div class="div_no_visible" id="div_callback_opacitat_on">
+                        Aquesta caixa és visible només quan l'element és OPAC
+                        totalment
+                    </div>
+                    <div class="div_no_visible" id="div_callback_opacitat_off">
+                        Aquesta caixa és visible només quan l'element deixa de
+                        ser OPAC totalment
+                    </div>
+                    <p></p>
+                </article>
+                <hr />
+
+                <!-- ENCADENAMENT -->
+
+                <article>
+                    <br />
+                    <span class="info_interactiva" title="encadenament"
+                        >encadenament</span
+                    >
+                    <br />
+                    <br />
+                    <div class="informacio" id="info_interactiva_encadenament">
+                        <p class="paragraf">
+                            Amb jQuery es poden encadenar diversos mètodes.
+                            L'encadenament permet executar diversos mètodes
+                            jQuery (en el mateix element) dins d'una sola
+                            instrucció.
+                        </p>
+                        <p class="paragraf">
+                            Per encadenar una acció, només cal afegir l'acció a
+                            l'acció anterior.
+                        </p>
+
+                        <p class="instruccions">
+                            Per visualitzar el seu funcionament, clica en el
+                            boto INICIA ENCADENAMET (amb el boto RESET
+                            ENCADENAMENT tornam a la posició inicial)
+                        </p>
+                    </div>
+                    <button id="inicia_encadenament_btn">
+                        INICIA ENCADENAMET
+                    </button>
+                    <button id="reset_encadenament_btn">
+                        RESET ENCADENAMENT
+                    </button>
+                    <div id="encadenament">ELEMENT</div>
+                </article>
+                <hr />
+
+                <!--  -->
+            </section>
+
+            <!-- JQUERY HTML -->
+
+            <section>
+                <h2 id="jquery_html">JQUERY HTML</h2>
+
+                <!-- PREPEND() i APPEND() -->
+
+                <article>
+                    <span class="info_interactiva" title="prepend_append"
+                        >prepend() i append()</span
+                    >
+                    <br />
+                    <br />
+                    <div
+                        class="informacio"
+                        id="info_interactiva_prepend_append"
+                    >
+                        <p class="paragraf">
+                            El mètode prepend() insereix contingut especificat
+                            al principi dels elements seleccionats.
+                        </p>
+                        <p class="paragraf">
+                            El mètode append() insereix contingut especificat al
+                            final dels elements seleccionats.
+                        </p>
+
+                        <p class="instruccions">
+                            Per visualitzar el seu funcionament, clica en els
+                            botons prepend() i append()
+                        </p>
+                    </div>
+                    <button id="prepend_btn">prepend()</button>
+                    <button id="append_btn">append()</button>
+                    <div class="div_visible" id="prepend_append">ELEMENT</div>
+                </article>
+                <hr />
+
+                <!-- BEFORE() i AFTER() -->
+
+                <article>
+                    <span class="info_interactiva" title="before_after"
+                        >before() i after()</span
+                    >
+                    <br />
+                    <br />
+                    <div class="informacio" id="info_interactiva_before_after">
+                        <p class="paragraf">
+                            El mètode before() insereix contingut especificat
+                            abans dels elements seleccionats
+                        </p>
+                        <p class="paragraf">
+                            El mètode after() insereix contingut especificat
+                            després dels elements seleccionats
+                        </p>
+
+                        <p class="instruccions">
+                            Per visualitzar el seu funcionament, clica en els
+                            botons before() i after()
+                        </p>
+                    </div>
+                    <button id="before_btn">before()</button>
+                    <button id="after_btn">after()</button>
+                    <div class="div_visible" id="before_after">ELEMENT</div>
+                </article>
+                <hr />
+
+                <!-- MANIPULACIO CSS -->
+
+                <article>
+                    <span class="info_interactiva" title="manipulacio_css"
+                        >Manipulació CSS</span
+                    >
+                    <br />
+                    <br />
+                    <div
+                        class="informacio"
+                        id="info_interactiva_manipulacio_css"
+                    >
+                        <p class="paragraf">
+                            El mètode css() estableix o retorna una o més
+                            propietats d'estil per als elements seleccionats
+                        </p>
+
+                        <p class="instruccions">
+                            Per visualitzar el seu funcionament, clica en els
+                            botons MANIPULA CSS, RESET CSS i INFO CSS
+                        </p>
+                    </div>
+                    <button id="manipula_css_btn">MANIPULA CSS</button>
+                    <button id="reset_css_btn">RESET CSS</button>
+                    <button id="info_css_btn">INFO CSS</button>
+                    <div id="manipulacio_css">ELEMENT</div>
+                    <div class="div_no_visible" id="info_css"></div>
+                </article>
+                <hr />
+            </section>
+        </div>
+
+        <!-- PEU -->
+        <footer>
+            <h4><strong>GABRIEL ALZINA ALOMAR</strong></h4>
+        </footer>
+    </body>
+</html>

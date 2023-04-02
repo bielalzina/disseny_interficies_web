@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+                float: left;
+                background-color: lightgrey;
+            }
+            .vores {
+                border-radius: 50px;
+            }
+            .vermell {
+                background-color: red;
+            }
+            .gran {
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+        <script src="biblioteques/jquery-3.6.4.js"></script>
+        <script>
+            $(document).ready(function () {
+                var $quadre = $("div");
+                $quadre.on("mouseover", function (e) {
+                    $(this).addClass("vermell");
+                    $(this).addClass("gran");
+                    $(this).addClass("vores");
+                });
+
+                $quadre.on("mouseout", function (e) {
+                    $(this).removeClass();
+                    //$(this).removeClass("vermell");
+                    //$(this).removeClass("gran");
+                    //$(this).removeClass("vores");
+                });
+            });
+        </script>
+
+        <title>EXEMPLES JQUERY</title>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>
