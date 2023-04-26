@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+    /* ESPACIAT TEXT */
+    line-height: 1.5 !important;
+    letter-spacing: 0.12em !important;
+    word-spacing: 0.16em !important;
+}
+
+/* ESTIL  BODY */
+body {
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ESTIL CAPÇALERA */
+.header {
+    text-align: center;
+    color: white;
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+    background: url(../imatges/logo.png) no-repeat right;
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.gradientHeader {
+    background: linear-gradient(to right, rgb(235, 103, 63), rgb(110, 32, 67));
+}
+
+.nomWeb1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.nomWeb2 {
+    margin-top: auto;
+    font-size: 3rem;
+}
+
+/* ESPACIAT TEXT */
+p {
+    margin-bottom: 2em !important;
+}
+
+/* PSEUDO-ELEMENT*/
+p::first-letter {
+    color: rgb(110, 32, 67);
+    font-size: 150%;
+    font-weight: bold;
+}
+
+/* ESTIL BARRA NAVEGACIÓ */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(110, 32, 67);
+    border-top: solid;
+    border-bottom: solid;
+    border-color: rgb(161, 158, 156);
+}
+
+/* ESTIL LINKS BARRA NAVEGACIÓ */
+.navbar a {
+    color: white;
+    font-size: 1.3rem;
+    padding: 15px 25px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+/* CANVIS QUAN HOVER */
+.navbar a:hover {
+    background-color: rgb(235, 103, 63);
+    color: black;
+    transform: scale(1.25);
+    border: solid;
+    border-color: rgb(102, 100, 98);
+}
+
+/* APLICAM RESPONSIVITAT A LES IMATGES */
+
+.responsiveImatgeEsquerra {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.responsiveImatge {
+    width: 100%;
+    height: auto;
+}
+
+/* CREAM DUES COLUMNES 20% i 80% UNA AL COSTAT DE L'ALTRA */
+/* COLUMNA ESQUERRA */
+.columnaEsquerra {
+    flex: 30%;
+    max-width: 420px;
+    background-color: rgb(252, 183, 127);
+    padding: 10px;
+}
+
+/* COLUMNA DRETA */
+.columnaDreta {
+    display: flex;
+    flex: 70%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(243, 237, 224);
+    padding: 10px;
+}
+
+/* CONTINGUTS COLUMNA ESQUERRA */
+
+.novetats {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.novetats p {
+    font-size: 1.2rem;
+}
+
+.caracteristiques,
+.preus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subcaracteristiques {
+    flex-direction: column;
+    border-radius: 2%;
+    border: solid;
+    border-width: thick;
+    background-color: rgb(252, 183, 127);
+    border-color: rgb(110, 32, 67);
+    padding: 15px;
+    margin: 10px 10px;
+    max-width: 400px;
+}
+
+.items {
+    flex-direction: column;
+    border-radius: 2%;
+    border: solid;
+    border-width: thick;
+    background-color: rgb(110, 32, 67);
+    border-color: rgb(252, 183, 127);
+    padding: 15px;
+    margin: 10px 10px;
+    max-width: 400px;
+    color: white;
+    text-align: center;
+}
+
+.subcaract_imatge {
+    display: flex;
+    justify-content: center;
+}
+
+.subcaract_imatge img {
+    width: 100px;
+    height: 100px;
+}
+
+.subcaract_texte h2 {
+    text-align: center;
+}
+
+.subcaract_texte p {
+    font-size: 1.2rem;
+}
+
+.columnaDreta h1,
+.columnaDreta h2,
+.columnaDreta h3 {
+    text-align: center;
+}
+
+/* FORMULARI */
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(252, 183, 127);
+    border: 2px solid rgb(110, 32, 67);
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 1.1rem;
+}
+
+input:focus,
+textarea:focus {
+    background-color: rgb(243, 237, 224);
+    border: 5px solid rgb(110, 32, 67);
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    background-color: rgb(110, 32, 67);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(252, 183, 127);
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.col-20 {
+    float: left;
+    width: 20%;
+    margin-top: 6px;
+}
+
+.col-80 {
+    float: left;
+    width: 80%;
+    margin-top: 6px;
+}
+
+/* PEU */
+
+.footer {
+    color: white;
+    background-color: rgb(110, 32, 67);
+    border-top: solid;
+    border-bottom: solid;
+    border-color: rgb(161, 158, 156);
+    margin-top: auto;
+}
+
+.footer h4,
+.footer h5 {
+    text-align: right;
+    margin-right: 20px;
+}
+
+/* SI LA PANTALLA DEL DISPOSITIU TÉ UN AMPLE IGUAL O INFERIOR A 760px
+LES COLUMNES ES POSICIONEN UNA DAMUNT L'ALTRA. SI TÉ MÉS DE 760px, LES 
+COLUMNES ES POSICIONEN UNA AL COSTAT DE L'ALTRA */
+@media screen and (max-width: 760px) {
+    .row,
+    .navbar,
+    .caracteristiques,
+    .preus {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .responsiveImatgeEsquerra {
+        max-width: 450px;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .columnaEsquerra {
+        max-width: 100%;
+    }
+
+    .columnaEsquerra h1,
+    .columnaEsquerra h2 {
+        text-align: center;
+    }
+    .subcaracteristiques,
+    .items {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 450px;
+    }
+
+    .col-20 {
+        width: 100%;
+    }
+
+    .col-80 {
+        width: 100%;
+    }
+
+    .novetats {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .novetats {
+        width: auto;
+    }
+}
