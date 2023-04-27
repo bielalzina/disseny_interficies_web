@@ -55,7 +55,7 @@ p {
 }
 
 /* PSEUDO-ELEMENT*/
-p::first-letter {
+.novetats p::first-letter {
     color: rgb(110, 32, 67);
     font-size: 150%;
     font-weight: bold;
@@ -91,7 +91,7 @@ p::first-letter {
 .navbar a:hover {
     background-color: rgb(235, 103, 63);
     color: black;
-    transform: scale(1.25);
+    transform: scale(1.1);
     border: solid;
     border-color: rgb(102, 100, 98);
 }
@@ -123,14 +123,15 @@ p::first-letter {
     display: flex;
     flex: 70%;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: rgb(243, 237, 224);
     padding: 10px;
 }
 
 /* CONTINGUTS COLUMNA ESQUERRA */
 
-.novetats {
+.novetats,
+.disseny_web {
     margin: 0 auto;
     width: 1000px;
 }
@@ -139,8 +140,7 @@ p::first-letter {
     font-size: 1.2rem;
 }
 
-.caracteristiques,
-.preus {
+.caracteristiques {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -157,20 +157,6 @@ p::first-letter {
     padding: 15px;
     margin: 10px 10px;
     max-width: 400px;
-}
-
-.items {
-    flex-direction: column;
-    border-radius: 2%;
-    border: solid;
-    border-width: thick;
-    background-color: rgb(110, 32, 67);
-    border-color: rgb(252, 183, 127);
-    padding: 15px;
-    margin: 10px 10px;
-    max-width: 400px;
-    color: white;
-    text-align: center;
 }
 
 .subcaract_imatge {
@@ -195,6 +181,32 @@ p::first-letter {
 .columnaDreta h2,
 .columnaDreta h3 {
     text-align: center;
+}
+
+/* TAULA COMPARATIVA WEBS */
+
+.comparativa_webs {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparativa_webs td {
+    text-align: center;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.capcalera_fila {
+    text-align: right;
+}
+
+.comparativa_webs th,
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+.comparativa_webs tr:nth-child(even) {
+    background-color: rgb(252, 183, 127);
 }
 
 /* FORMULARI */
@@ -266,8 +278,7 @@ input[type="submit"]:hover {
     margin-top: auto;
 }
 
-.footer h4,
-.footer h5 {
+.footer p {
     text-align: right;
     margin-right: 20px;
 }
@@ -278,8 +289,7 @@ COLUMNES ES POSICIONEN UNA AL COSTAT DE L'ALTRA */
 @media screen and (max-width: 760px) {
     .row,
     .navbar,
-    .caracteristiques,
-    .preus {
+    .caracteristiques {
         flex-direction: column;
         justify-content: center;
     }
@@ -298,8 +308,7 @@ COLUMNES ES POSICIONEN UNA AL COSTAT DE L'ALTRA */
     .columnaEsquerra h2 {
         text-align: center;
     }
-    .subcaracteristiques,
-    .items {
+    .subcaracteristiques {
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -320,7 +329,8 @@ COLUMNES ES POSICIONEN UNA AL COSTAT DE L'ALTRA */
 }
 
 @media screen and (max-width: 1500px) {
-    .novetats {
+    .novetats,
+    .disseny_web {
         width: auto;
     }
 }

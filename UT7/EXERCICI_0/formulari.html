@@ -14,135 +14,151 @@
     </head>
     <body>
         <!-- CAPÇALERA -->
-        <div class="header">
-            <div class="gradientHeader">
-                <div class="row">
-                    <div id="logo"></div>
-                    <div class="nomWeb1">
-                        <h1 class="nomWeb2">SOLUCIONS DIGITALS</h1>
+        <header>
+            <div class="header">
+                <div class="gradientHeader">
+                    <div class="row">
+                        <div id="logo"></div>
+                        <div class="nomWeb1">
+                            <h1 class="nomWeb2">SOLUCIONS DIGITALS</h1>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
 
         <!-- BARRA NAVEGACIÓ -->
-        <div class="navbar sticky">
-            <a href="index.html">INICI</a>
-            <a href="dissenyWeb.html">DISSENY WEB</a>
-            <a href="equipament.html">EQUIPAMENT INFORMÀTIC</a>
-            <a href="formulari.html">CONTACTA'NS</a>
-        </div>
+        <nav>
+            <div class="navbar sticky">
+                <a href="#parlem">PARLEM?</a>
+                <a href="index.html">INICI</a>
+                <a href="dissenyWeb.html">DISSENY WEB</a>
+                <a href="equipament.html">EQUIPAMENT INFORMÀTIC</a>
+                <a href="formulari.html">CONTACTA'NS</a>
+            </div>
+        </nav>
 
         <!-- CONTINGUT -->
         <div class="row">
             <div class="columnaEsquerra">
-                <h1>OFERTES</h1>
-                <h2>OFERTA D'AVUI</h2>
-
-                <a href="#"
-                    ><img
-                        src="./imatges/ofertadia.png"
-                        alt="Oferta del dia"
-                        class="responsiveImatgeEsquerra"
-                /></a>
-                <h2>ORDINADORS PCCOM</h2>
-
-                <a href="#"
-                    ><img
-                        src="./imatges/pccom.png"
-                        alt="Ordinadors PCCOM"
-                        class="responsiveImatgeEsquerra"
-                /></a>
-                <h2>MON GAMER</h2>
-                <a href="#"
-                    ><img
-                        src="./imatges/gamers.png"
-                        alt="Regals per a gamers"
-                        class="responsiveImatgeEsquerra"
-                /></a>
+                <aside>
+                    <article>
+                        <h1>OFERTES</h1>
+                        <section>
+                            <h2>OFERTA D'AVUI</h2>
+                            <a href="#"
+                                ><img
+                                    src="./imatges/ofertadia.png"
+                                    alt="Oferta del dia"
+                                    class="responsiveImatgeEsquerra"
+                            /></a>
+                        </section>
+                        <section>
+                            <h2>ORDINADORS PCCOM</h2>
+                            <a href="#"
+                                ><img
+                                    src="./imatges/pccom.png"
+                                    alt="Ordinadors PCCOM"
+                                    class="responsiveImatgeEsquerra"
+                            /></a>
+                        </section>
+                        <section>
+                            <h2>MON GAMER</h2>
+                            <a href="#"
+                                ><img
+                                    src="./imatges/gamers.png"
+                                    alt="Regals per a gamers"
+                                    class="responsiveImatgeEsquerra"
+                            /></a>
+                        </section>
+                    </article>
+                </aside>
             </div>
             <div class="columnaDreta">
-                <h1>PARLEM?</h1>
-                <h2>
-                    Posa't en contacte amb nosaltres i et resoldrem qualsevol
-                    dubte que puguis tenir
-                </h2>
+                <main>
+                    <div class="formulari">
+                        <h1 id="parlem">PARLEM?</h1>
+                        <h2>
+                            Posa't en contacte amb nosaltres i et resoldrem
+                            qualsevol dubte que puguis tenir
+                        </h2>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-20">
+                                    <label for="nom_complet"
+                                        >NOM I LLINATGES:</label
+                                    >
+                                </div>
+                                <div class="col-80">
+                                    <input
+                                        type="text"
+                                        id="nom_complet"
+                                        name="nom-complet"
+                                        placeholder="Indica'ns el teu nom i llintages.."
+                                    />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-20">
+                                    <label for="mail">CORREU ELECTRÒNIC:</label>
+                                </div>
+                                <div class="col-80">
+                                    <input
+                                        type="email"
+                                        id="mail"
+                                        name="mail"
+                                        placeholder="El teu correu electrònic"
+                                    />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-20">
+                                    <label for="tel">TELÈFON:</label>
+                                </div>
+                                <div class="col-80">
+                                    <input
+                                        type="tel"
+                                        id="tel"
+                                        name="tel"
+                                        placeholder="El teu telèfon"
+                                    />
+                                </div>
+                            </div>
 
-                <div class="formulari">
-                    <form action="#">
-                        <div class="row">
-                            <div class="col-20">
-                                <label for="nom_complet"
-                                    >NOM I LLINATGES:</label
-                                >
+                            <div class="row">
+                                <div class="col-20">
+                                    <label for="assumpte">ASSUMPTE:</label>
+                                </div>
+                                <div class="col-80">
+                                    <textarea
+                                        id="assumpte"
+                                        name="assumpte"
+                                        placeholder="Escriu el teu missatge.."
+                                        style="height: 200px"
+                                    ></textarea>
+                                </div>
                             </div>
-                            <div class="col-80">
-                                <input
-                                    type="text"
-                                    id="nom_complet"
-                                    name="nom-complet"
-                                    placeholder="Indica'ns el teu nom i llintages.."
-                                />
+                            <br />
+                            <div class="row">
+                                <input type="submit" value="ENVIA" />
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-20">
-                                <label for="mail">CORREU ELECTRÒNIC:</label>
-                            </div>
-                            <div class="col-80">
-                                <input
-                                    type="email"
-                                    id="mail"
-                                    name="mail"
-                                    placeholder="El teu correu electrònic"
-                                />
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-20">
-                                <label for="tel">TELÈFON:</label>
-                            </div>
-                            <div class="col-80">
-                                <input
-                                    type="tel"
-                                    id="tel"
-                                    name="tel"
-                                    placeholder="El teu telèfon"
-                                />
-                            </div>
-                        </div>
+                        </form>
+                    </div>
 
-                        <div class="row">
-                            <div class="col-20">
-                                <label for="assumpte">ASSUMPTE:</label>
-                            </div>
-                            <div class="col-80">
-                                <textarea
-                                    id="assumpte"
-                                    name="assumpte"
-                                    placeholder="Escriu el teu missatge.."
-                                    style="height: 200px"
-                                ></textarea>
-                            </div>
-                        </div>
-                        <br />
-                        <div class="row">
-                            <input type="submit" value="ENVIA" />
-                        </div>
-                    </form>
-                </div>
-
-                <br />
+                    <br />
+                </main>
             </div>
         </div>
 
         <!-- PEU -->
-        <div class="footer">
-            <h4><strong>GA SOLUCIONS DIGITALS</strong></h4>
-            <h5>
-                Canonge Payeras, 47 baixos (07300) Inca - Tf: 666 66 66 66 - @:
-                info@ga.net
-            </h5>
-        </div>
+        <footer>
+            <div class="footer">
+                <p><strong>GA SOLUCIONS DIGITALS</strong></p>
+                <p>
+                    Canonge Payeras, 47 baixos (07300) Inca - Tf: 666 66 66 66 -
+                    @: info@ga.net
+                </p>
+            </div>
+        </footer>
     </body>
 </html>
