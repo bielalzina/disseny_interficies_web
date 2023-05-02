@@ -29,7 +29,7 @@ body {
 #logo {
     width: 200px;
     height: 200px;
-    background: url(../imatges/logo.png) no-repeat right;
+    background: url(../media/logo.png) no-repeat right;
     float: left;
     margin-right: 20px;
     margin-left: 20px;
@@ -128,10 +128,24 @@ p {
     padding: 10px;
 }
 
+/* MAPA WEB */
+
+.container_mapaweb {
+    background-color: rgb(243, 237, 224);
+}
+
+.mapaweb {
+    padding: 10px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
 /* CONTINGUTS COLUMNA ESQUERRA */
 
 .novetats,
-.disseny_web {
+.disseny_web,
+.protocols,
+.formulari {
     margin: 0 auto;
     width: 1000px;
 }
@@ -283,6 +297,10 @@ input[type="submit"]:hover {
     margin-right: 20px;
 }
 
+.footer a {
+    color: white;
+}
+
 /* SI LA PANTALLA DEL DISPOSITIU TÉ UN AMPLE IGUAL O INFERIOR A 760px
 LES COLUMNES ES POSICIONEN UNA DAMUNT L'ALTRA. SI TÉ MÉS DE 760px, LES 
 COLUMNES ES POSICIONEN UNA AL COSTAT DE L'ALTRA */
@@ -330,7 +348,9 @@ COLUMNES ES POSICIONEN UNA AL COSTAT DE L'ALTRA */
 
 @media screen and (max-width: 1500px) {
     .novetats,
-    .disseny_web {
+    .disseny_web,
+    .protocols,
+    .formulari {
         width: auto;
     }
 }
