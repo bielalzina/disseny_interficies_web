@@ -3,7 +3,6 @@ $(document).ready(function () {
 
     esdevenimentMouseEnter();
     esdevenimentMouseLeave();
-    mostraToolTipMenu();
 });
 
 // ESDEVENIMENT MOUSEENTER()
@@ -29,12 +28,5 @@ function esdevenimentMouseEnter() {
 function esdevenimentMouseLeave() {
     $(".opcio_menu").on("mouseleave", function () {
         $(this).removeAttr("style");
-    });
-}
-
-function mostraToolTipMenu() {
-    $(".opcio_menu").tooltip({
-        content: "ADVENT mouseenter()",
-        track: true,
     });
 }
