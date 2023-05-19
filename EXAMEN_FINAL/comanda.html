@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Rubik"
+            rel="stylesheet"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+        <script type="text/javascript" src="./js/script.js"></script>
+        <link rel="stylesheet" href="./css/estils.css" />
+        <title>COMANDA</title>
+    </head>
+    <body>
+        <div class="contingut">
+            <!-- CAPÇALERA -->
+            <header class="capcalera">
+                <span id="logotip">
+                    <img
+                        id="ensaimada"
+                        src="./media/ensaimada.png"
+                        alt="ENSAIMADA"
+                        width="150"
+                        height="150"
+                    />
+                </span>
+                <h1 id="h1_header">PASTISSERIA QUE BO!</h1>
+            </header>
+
+            <!-- BARRA DE NAVEGACIÓ -->
+
+            <nav id="menu">
+                <div class="navbar">
+                    <a
+                        title="ADVENT mouseenter() i mouseleave()"
+                        class="opcio_menu"
+                        href="#fesunacomanda"
+                        >FES UNA COMANDA</a
+                    >
+                    <a
+                        title="ADVENT mouseenter() i mouseleave()"
+                        class="opcio_menu"
+                        href="index.html"
+                        >INICI</a
+                    >
+                    <a
+                        title="ADVENT mouseenter() i mouseleave()"
+                        class="opcio_menu"
+                        href="#"
+                        >GALERIA</a
+                    >
+                    <a
+                        title="ADVENT mouseenter() i mouseleave()"
+                        class="opcio_menu"
+                        href="preus.html"
+                        >PREUS</a
+                    >
+                    <a
+                        title="ADVENT mouseenter() i mouseleave()"
+                        class="opcio_menu"
+                        href="comanda.html"
+                        >COMANDA</a
+                    >
+                    <a
+                        title="ADVENT mouseenter() i mouseleave()"
+                        class="opcio_menu"
+                        href="#"
+                        >QUE BO!</a
+                    >
+                </div>
+            </nav>
+            <!-- CONTINGUT -->
+            <main>
+                <article class="comanda">
+                    <h1 id="fesunacomanda">FES UNA COMANDA</h1>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-30">
+                                <label for="nom_complet"
+                                    >NOM I LLINATGES:</label
+                                >
+                            </div>
+                            <div class="col-70">
+                                <input
+                                    type="text"
+                                    id="nom_complet"
+                                    name="nom-complet"
+                                    placeholder="Indica'ns el teu nom i llintages.."
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-30">
+                                <label for="mail">CORREU ELECTRÒNIC:</label>
+                            </div>
+                            <div class="col-70">
+                                <input
+                                    type="email"
+                                    id="mail"
+                                    name="mail"
+                                    placeholder="El teu correu electrònic"
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-30">
+                                <label for="mail">TELEFON:</label>
+                            </div>
+                            <div class="col-70">
+                                <input
+                                    type="tel"
+                                    id="tel"
+                                    name="tel"
+                                    placeholder="El teu telefon"
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-30">
+                                <label for="tipus">SELECCIONA ENSAÏMADA:</label>
+                            </div>
+                            <div class="col-70">
+                                <select id="tipus" name="tipus" required>
+                                    <option value="llisa">LLISA</option>
+                                    <option value="cabell">
+                                        CABELL D'ÀNGEL
+                                    </option>
+                                    <option value="crema">CREMA</option>
+                                    <option value="nata">NATA</option>
+                                    <option value="xocolata">XOCOLATA</option>
+                                    <option value="nata-xocolata">
+                                        NATA i XOCOLATA
+                                    </option>
+                                    <option value="nata-xocolata-anous">
+                                        NATA, XOCOLATA i ANOUS
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-30">
+                                <label for="pes">PES:</label>
+                            </div>
+
+                            <div class="col-70">
+                                <select id="pes" name="pes" required>
+                                    <option value="quart-kilo">1/4 KG</option>
+                                    <option value="mig-kilo">1/2 KG</option>
+                                    <option value="un-kilo">1 KG</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-30">
+                                <label for="unitats">UNITATS:</label>
+                            </div>
+                            <div class="col-70">
+                                <input
+                                    type="number"
+                                    id="unitats"
+                                    name="unitats"
+                                    min="1"
+                                    max="10"
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-30">
+                                <label for="diahora">DIA i HORA:</label>
+                            </div>
+                            <div class="col-70">
+                                <input
+                                    type="datetime-local"
+                                    id="diahora"
+                                    name="diahora"
+                                    required
+                                />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-30">
+                                <label for="observacions">OBSERVACIONS:</label>
+                            </div>
+                            <div class="col-70">
+                                <textarea
+                                    id="observacions"
+                                    name="observacions"
+                                    placeholder="Escriu les observacions que consideris adients.."
+                                    style="height: 200px"
+                                ></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <input type="submit" value="ENVIA" />
+                        </div>
+                    </form>
+                </article>
+            </main>
+        </div>
+
+        <footer class="peu">
+            <p>
+                <strong>PASTISSERIA QUE BO!</strong>
+            </p>
+            <p>Tf: 666 66 66 66 - @: info@quebo.com</p>
+
+            <p><a href="mapaWeb.html">MAPA WEB</a></p>
+        </footer>
+    </body>
+</html>

@@ -10,6 +10,21 @@ body {
     font-family: Rubik, Helvetica, Arial, sans-serif;
 }
 
+.contingut {
+    min-height: calc(100vh - 236px);
+}
+
+/* ESPACIAT TEXT */
+p {
+    margin-bottom: 2em !important;
+}
+
+/* TAMANY FONT */
+
+.inici p {
+    font-size: 1.2rem;
+}
+
 /* CAPÇALERA */
 
 .capcalera {
@@ -58,6 +73,113 @@ body {
     text-align: center;
 }
 
+/* CONTINGUT PRINCIPAL */
+
+/* PSEUDO-ELEMENT*/
+.inici p::first-letter {
+    color: #562b0c;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.inici,
+.preus,
+.comanda {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+/* APLICAM RESPONSIVITAT A LES IMATGES */
+
+.responsiveImatge {
+    width: 100%;
+    height: auto;
+}
+
+/* TAULA COMPARATIVA PREUS */
+
+.comparativa_preus {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+}
+
+.comparativa_preus td {
+    text-align: center;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.capcalera_fila {
+    text-align: center;
+}
+
+.comparativa_preus th,
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+.comparativa_preus tr:nth-child(even) {
+    background-color: #fccda9;
+}
+
+/* FORMULARI */
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    background-color: #fccda9;
+    border: 2px solid #562b0c;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 1.2rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border: 5px solid #562b0c;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #562b0c;
+    color: #fccda9;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #fccda9;
+    color: #562b0c;
+}
+
+.col-30 {
+    float: left;
+    width: 30%;
+    margin-top: 6px;
+}
+
+.col-70 {
+    float: left;
+    width: 70%;
+    margin-top: 6px;
+}
+
 /* PEU */
 
 .peu {
@@ -67,13 +189,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    min-height: 178px;
+    margin-top: 5px;
 }
 
 .peu p a {
     color: #562b0c;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
+    .capcalera {
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .navbar {
         flex-direction: column;
     }
@@ -82,7 +211,30 @@ body {
         border-style: solid;
         border-color: white;
     }
+
+    .contingut {
+        min-height: calc(100vh - 260px);
+    }
+
+    .peu {
+        min-height: 202px;
+    }
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 870px) {
+    .col-30 {
+        width: 100%;
+    }
+
+    .col-70 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .inici,
+    .preus,
+    .comanda {
+        width: auto;
+    }
 }

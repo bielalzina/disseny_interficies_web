@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Rubik"
+            rel="stylesheet"
+        />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+        <script type="text/javascript" src="./js/script.js"></script>
+        <link rel="stylesheet" href="./css/estils.css" />
+        <title>PREUS</title>
+    </head>
+    <body>
+        <div class="contingut">
+            <!-- CAPÇALERA -->
+            <header class="capcalera">
+                <span id="logotip">
+                    <img
+                        id="ensaimada"
+                        src="./media/ensaimada.png"
+                        alt="ENSAIMADA"
+                        width="150"
+                        height="150"
+                    />
+                </span>
+                <h1 id="h1_header">PASTISSERIA QUE BO!</h1>
+            </header>
+
+            <!-- BARRA DE NAVEGACIÓ -->
+
+            <nav id="menu">
+                <div class="navbar">
+                    <a
+                        title="ADVENT mouseenter() i mouseleave()"
+                        class="opcio_menu"
+                        href="#llistapreus"
+                        >PREUS ENSAÏMADES</a
+                    >
+                    <a
+                        title="ADVENT mouseenter() i mouseleave()"
+                        class="opcio_menu"
+                        href="index.html"
+                        >INICI</a
+                    >
+                    <a
+                        title="ADVENT mouseenter() i mouseleave()"
+                        class="opcio_menu"
+                        href="#"
+                        >GALERIA</a
+                    >
+                    <a
+                        title="ADVENT mouseenter() i mouseleave()"
+                        class="opcio_menu"
+                        href="preus.html"
+                        >PREUS</a
+                    >
+                    <a
+                        title="ADVENT mouseenter() i mouseleave()"
+                        class="opcio_menu"
+                        href="comanda.html"
+                        >COMANDA</a
+                    >
+                    <a
+                        title="ADVENT mouseenter() i mouseleave()"
+                        class="opcio_menu"
+                        href="#"
+                        >QUE BO!</a
+                    >
+                </div>
+            </nav>
+            <!-- CONTINGUT -->
+            <main>
+                <article class="preus">
+                    <h1 id="llistapreus">ELS PREUS DELS NOSTRES ARTICLES</h1>
+                    <table class="comparativa_preus">
+                        <caption>
+                            LLISTAT PREUS ENSAÏMADES
+                        </caption>
+                        <tr>
+                            <th scope="col" id="c0">TIPUS ENSAÏMADA</th>
+                            <th scope="col" id="c1">1/4 KG</th>
+                            <th scope="col" id="c2">1/2 KG</th>
+                            <th scope="col" id="c3">1 KG</th>
+                        </tr>
+                        <tr>
+                            <th
+                                class="capcalera_fila"
+                                scope="row"
+                                id="f1"
+                                headers="c0"
+                            >
+                                LLISA
+                            </th>
+                            <td headers="f1 c1">5 €</td>
+                            <td headers="f1 c2">8 €</td>
+                            <td headers="f1 c3">10 €</td>
+                        </tr>
+                        <tr>
+                            <th
+                                class="capcalera_fila"
+                                scope="row"
+                                id="f2"
+                                headers="c0"
+                            >
+                                CABELL D'ÀNGEL
+                            </th>
+                            <td headers="f2 c1">5 €</td>
+                            <td headers="f2 c2">5 €</td>
+                            <td headers="f2 c3">5 €</td>
+                        </tr>
+                        <tr>
+                            <th
+                                class="capcalera_fila"
+                                scope="row"
+                                id="f3"
+                                headers="c0"
+                            >
+                                CREMA
+                            </th>
+                            <td headers="f3 c1">5 €</td>
+                            <td headers="f3 c2">5 €</td>
+                            <td headers="f3 c3">5 €</td>
+                        </tr>
+                        <tr>
+                            <th
+                                class="capcalera_fila"
+                                scope="row"
+                                id="f4"
+                                headers="c0"
+                            >
+                                NATA
+                            </th>
+                            <td headers="f4 c1">5 €</td>
+                            <td headers="f4 c2">5 €</td>
+                            <td headers="f4 c3">5 €</td>
+                        </tr>
+                        <tr>
+                            <th
+                                class="capcalera_fila"
+                                scope="row"
+                                id="f5"
+                                headers="c0"
+                            >
+                                XOCOLATA
+                            </th>
+                            <td headers="f5 c1">5 €</td>
+                            <td headers="f5 c2">5 €</td>
+                            <td headers="f5 c3">5 €</td>
+                        </tr>
+                        <tr>
+                            <th
+                                class="capcalera_fila"
+                                scope="row"
+                                id="f6"
+                                headers="c0"
+                            >
+                                NATA i XOCOLATA
+                            </th>
+                            <td headers="f6 c1">5 €</td>
+                            <td headers="f6 c2">5 €</td>
+                            <td headers="f6 c3">5 €</td>
+                        </tr>
+                        <tr>
+                            <th
+                                class="capcalera_fila"
+                                scope="row"
+                                id="f7"
+                                headers="c0"
+                            >
+                                NATA, XOCOLATA i ANOUS
+                            </th>
+                            <td headers="f7 c1">5 €</td>
+                            <td headers="f7 c2">5 €</td>
+                            <td headers="f7 c3">5 €</td>
+                        </tr>
+                    </table>
+                </article>
+            </main>
+        </div>
+
+        <footer class="peu">
+            <p>
+                <strong>PASTISSERIA QUE BO!</strong>
+            </p>
+            <p>Tf: 666 66 66 66 - @: info@quebo.com</p>
+
+            <p><a href="mapaWeb.html">MAPA WEB</a></p>
+        </footer>
+    </body>
+</html>
