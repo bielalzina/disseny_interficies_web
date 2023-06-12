@@ -1,9 +1,23 @@
 $(document).ready(function () {
+    //ANIMACIO LOGOTIP
+    animacioImatge();
+
     // ESDEVENIMENTS
 
     esdevenimentMouseEnter();
     esdevenimentMouseLeave();
 });
+
+//ANIMACIO LOGOTIP
+// El valor de l'opacitat de la imatge canvia entre 0.6 i 1,
+// cada 1000ms i de infinitament
+function animacioImatge() {
+    setInterval(function () {
+        $("#logogym")
+            .animate({ opacity: "0.6" }, 1000, "linear")
+            .animate({ opacity: "1" }, 1000, "linear");
+    }, 2000);
+}
 
 // ESDEVENIMENT MOUSEENTER()
 // Canvia css als elements amb class="opcio_menu" quan punter del

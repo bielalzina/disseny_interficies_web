@@ -20,14 +20,14 @@
             <header class="capcalera">
                 <span id="logotip">
                     <img
-                        id="ensaimada"
-                        src="./media/ensaimada.png"
-                        alt="ENSAIMADA"
+                        id="logogym"
+                        src="./media/Sana-gim.png"
+                        alt="LOGOTIP GIMNAS"
                         width="150"
                         height="150"
                     />
                 </span>
-                <h1 id="h1_header">PASTISSERIA QUE BO!</h1>
+                <h1 id="h1_header">GIMNÀS SANA-GIM</h1>
             </header>
 
             <!-- BARRA DE NAVEGACIÓ -->
@@ -37,8 +37,8 @@
                     <a
                         title="ADVENT mouseenter() i mouseleave()"
                         class="opcio_menu"
-                        href="#fesunacomanda"
-                        >FES UNA COMANDA</a
+                        href="#matriculate"
+                        >MATRÍCULA'T</a
                     >
                     <a
                         title="ADVENT mouseenter() i mouseleave()"
@@ -49,33 +49,35 @@
                     <a
                         title="ADVENT mouseenter() i mouseleave()"
                         class="opcio_menu"
-                        href="#"
+                        href="galeria.html"
                         >GALERIA</a
                     >
                     <a
                         title="ADVENT mouseenter() i mouseleave()"
                         class="opcio_menu"
-                        href="preus.html"
-                        >PREUS</a
+                        href="quotes.html"
+                        >QUOTES</a
                     >
                     <a
                         title="ADVENT mouseenter() i mouseleave()"
                         class="opcio_menu"
-                        href="comanda.html"
-                        >COMANDA</a
+                        href="formulari.html"
+                        >MATRÍCULA</a
                     >
                     <a
                         title="ADVENT mouseenter() i mouseleave()"
                         class="opcio_menu"
-                        href="#"
-                        >QUE BO!</a
+                        href="sana-gim.html"
+                        >DADES INTERES</a
                     >
                 </div>
             </nav>
             <!-- CONTINGUT -->
             <main>
-                <article class="comanda">
-                    <h1 id="fesunacomanda">FES UNA COMANDA</h1>
+                <article class="matricula">
+                    <h1 id="matriculate">
+                        EMPLENA AQUEST FORMULARI PER MATRICULAR-TE
+                    </h1>
                     <form action="#">
                         <div class="row">
                             <div class="col-30">
@@ -126,68 +128,38 @@
 
                         <div class="row">
                             <div class="col-30">
-                                <label for="tipus">SELECCIONA ENSAÏMADA:</label>
+                                <label for="tipus">SELECCIONA MODALITAT:</label>
                             </div>
                             <div class="col-70">
                                 <select id="tipus" name="tipus" required>
-                                    <option value="llisa">LLISA</option>
-                                    <option value="cabell">
-                                        CABELL D'ÀNGEL
+                                    <option value="general">GENERAL</option>
+                                    <option value="menors18">
+                                        MENORS 18 ANYS
                                     </option>
-                                    <option value="crema">CREMA</option>
-                                    <option value="nata">NATA</option>
-                                    <option value="xocolata">XOCOLATA</option>
-                                    <option value="nata-xocolata">
-                                        NATA i XOCOLATA
+                                    <option value="majors65">
+                                        MAJORS 65 ANYS
                                     </option>
-                                    <option value="nata-xocolata-anous">
-                                        NATA, XOCOLATA i ANOUS
+                                    <option value="fitness">FITNESS</option>
+                                    <option value="crossfit">CROSSFIT</option>
+                                    <option value="culturisme">
+                                        CULTURISME
                                     </option>
+                                    <option value="premium">PREMIUM</option>
                                 </select>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-30">
-                                <label for="pes">PES:</label>
+                                <label for="dies">DIES:</label>
                             </div>
 
                             <div class="col-70">
-                                <select id="pes" name="pes" required>
-                                    <option value="quart-kilo">1/4 KG</option>
-                                    <option value="mig-kilo">1/2 KG</option>
-                                    <option value="un-kilo">1 KG</option>
+                                <select id="dies" name="dies" required>
+                                    <option value="2">2 DIES</option>
+                                    <option value="4">4 DIES</option>
+                                    <option value="7">7 DIES</option>
                                 </select>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-30">
-                                <label for="unitats">UNITATS:</label>
-                            </div>
-                            <div class="col-70">
-                                <input
-                                    type="number"
-                                    id="unitats"
-                                    name="unitats"
-                                    min="1"
-                                    max="10"
-                                    required
-                                />
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-30">
-                                <label for="diahora">DIA i HORA:</label>
-                            </div>
-                            <div class="col-70">
-                                <input
-                                    type="datetime-local"
-                                    id="diahora"
-                                    name="diahora"
-                                    required
-                                />
                             </div>
                         </div>
 
@@ -215,10 +187,9 @@
 
         <footer class="peu">
             <p>
-                <strong>PASTISSERIA QUE BO!</strong>
+                <strong>GIMNAS SANA-GIM</strong>
             </p>
-            <p>Tf: 666 66 66 66 - @: info@quebo.com</p>
-
+            <p>Tf: 666 66 66 66 - @: info@sanagim.com</p>
             <p><a href="mapaWeb.html">MAPA WEB</a></p>
         </footer>
     </body>

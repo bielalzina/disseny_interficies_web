@@ -21,7 +21,10 @@ p {
 
 /* TAMANY FONT */
 
-.inici p {
+.inici p,
+.inici ol,
+.inici ul,
+.informacio p {
     font-size: 1.2rem;
 }
 
@@ -35,21 +38,6 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-/* ANIMACIÓ LOGOTIP ENSAIMADA */
-
-#ensaimada {
-    animation: gir_infinit 10s infinite linear;
-}
-
-@keyframes gir_infinit {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(359deg);
-    }
 }
 
 .navbar {
@@ -78,13 +66,15 @@ p {
 /* PSEUDO-ELEMENT*/
 .inici p::first-letter {
     color: #562b0c;
-    font-size: 150%;
+    font-size: 130%;
     font-weight: bold;
 }
 
 .inici,
 .preus,
-.comanda {
+.matricula,
+.informacio,
+.galeria {
     margin: 0 auto;
     width: 1000px;
 }
@@ -96,7 +86,14 @@ p {
     height: auto;
 }
 
-/* TAULA COMPARATIVA PREUS */
+/* GALERIA */
+
+.galeria img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* TAULA COMPARATIVA QUOTES */
 
 .comparativa_preus {
     width: 100%;
@@ -180,6 +177,13 @@ input[type="submit"]:hover {
     margin-top: 6px;
 }
 
+/* DADES INTERES SANA - GIM */
+
+iframe {
+    width: 600px;
+    height: 450px;
+}
+
 /* PEU */
 
 .peu {
@@ -234,7 +238,9 @@ input[type="submit"]:hover {
 @media screen and (max-width: 1100px) {
     .inici,
     .preus,
-    .comanda {
+    .matricula,
+    .informacio,
+    .galeria {
         width: auto;
     }
 }
